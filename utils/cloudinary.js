@@ -36,8 +36,11 @@ cloudinary.config({
         }
  }
 
+ export { uploadOnCloudinary };
+
+/*
 cloudinary.v2.uploader
 .upload("sample.jpg",
   { width: 2000, height: 1000, crop: "limit" })
 .then(result=>console.log(result));
-
+*/
