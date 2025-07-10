@@ -1,8 +1,4 @@
-export const DB_NAME = "your_db_name"
-
-
-
-
+export const DB_NAME = "videotube"
 /*
 import dotenv from "dotenv";
 import express from "express";

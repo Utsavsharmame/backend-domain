@@ -1,7 +1,8 @@
-import express from 'express';
+import express from "express";
+const app = express();
 import mongoose from 'mongoose';    
 import dotenv from 'dotenv';
-import connectDB from '../db/index.js';
+import connectDB from './db/index.js';
  import cookieParser from 'cookie-parser';
 import cors from 'cors';
 
@@ -25,9 +26,9 @@ import cors from 'cors';
 
      // routes import
 
-      import userRoutes from '../routes/user.routes.js';
+      import userRoutes from './routes/user.routes.js';
       // routes decleration
       app.use('/api/users', userRoutes);
 
 
-export { app }
+export default app;
